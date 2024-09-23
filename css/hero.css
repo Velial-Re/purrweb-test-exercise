@@ -1,0 +1,45 @@
+.hero {
+    height: 662px;
+    padding: 130px 0 0 110px;
+    display: flex;
+    gap: 64px;
+    background-color: var(--grayscale-01);
+    z-index: 2;
+    overflow: hidden;
+}
+.hero__wrap {
+    display: flex;
+    position: relative;
+}
+.hero__text-block {
+    max-width: 671px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero__woman {
+    overflow: visible;
+    height: 753px;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+}
+
+.hero__woman::before {
+    content: "";
+    background-image: url("./../images/business-hero-figure.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+    bottom: -25px;
+    width: 800px;
+    -webkit-background-size: 70% 67%;
+    -moz-background-size: 70% 67%;
+    background-size: 70% 67%;
+    height: 100%;
+    position: absolute;
+}
+.hero__text-block .btn{
+    margin-top: 20px;
+    max-width: 182px;
+}

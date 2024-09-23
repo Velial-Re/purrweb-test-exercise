@@ -1,0 +1,34 @@
+.links {
+    background: var(--grayscale-06);
+    display: flex;
+    gap: 33px;
+}
+.links .wrapper {
+    padding-right: 45px;
+}
+.links__text-block {
+    color: var(--grayscale-00);
+    max-width: 822px;
+}
+.links__text-block h2 + p {
+    margin-top: 20px;
+}
+.links__social {
+    display: flex;
+    gap: 40px;
+}
+
+
+.links__text-block .title-t2 {
+    max-width: 822px;
+}
+.links__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.links__social-item:nth-of-type(2n) {
+    height: 180px;
+    display: flex;
+    align-items: end;
+}
+

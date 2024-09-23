@@ -1,0 +1,43 @@
+.how-works {
+    background-color: var(--grayscale-01);
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+.how-works .wrapper {
+    padding-inline: 0;
+}
+.how-works__wrap {
+    height: 636px;
+    position: relative;
+    padding-block: 46px;
+}
+.how-works__background {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+.how-works__phone {
+    position: absolute;
+    left: calc(50% - 154px);
+    top: 0;
+    z-index: 1;
+}
+.how-works__background-item {
+    width: 4320px;
+    display: flex;
+    gap: 20px;
+    animation: row-animation 10s linear infinite;
+    animation-delay: -10s;
+}
+
+.how-works__background-item span {
+    white-space: nowrap;
+    width: 1032.84px;
+}
+.how-works__background-item:nth-child(2) {
+    animation: row-animation-reversed 10s linear infinite;
+    animation-delay: -10s;
+}
+.how-works__title{
+    display: none;
+}

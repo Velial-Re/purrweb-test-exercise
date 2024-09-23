@@ -1,0 +1,31 @@
+.statistics {
+    width: 100%;
+    background: var(--primary-01);
+    height: 222px;
+}
+
+.statistics__wrap {
+    display: flex;
+    justify-content: center;
+    padding-block: 40px;
+    gap: 100px;
+    margin: 0 auto;
+}
+.statistics__block {
+    max-width: 217px;
+    max-height: 142px;
+    overflow: hidden;
+}
+
+.statistics__subtitle {
+    margin-top: 16px;
+}
+.statistics__block:first-child{
+    max-width: 217px;
+}
+.statistics__block:nth-child(2){
+    max-width: 163px;
+}
+.statistics__block:last-child{
+    max-width: 161px;
+}

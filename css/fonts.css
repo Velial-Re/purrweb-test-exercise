@@ -1,0 +1,145 @@
+.title-t1 {
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 106%;
+}
+.title-t2 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 106%;
+}
+.title-t3 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 106%;
+}
+.title-t4 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 106%;
+}
+.title-t5 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: auto;
+}
+.title-t6 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 106%;
+}
+.title-t7 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 106%;
+}
+.title-t8 {
+    font-size: 86px;
+    font-weight: 700;
+    line-height: 106%;
+}
+.title-transperent {
+    color: transparent;
+    -webkit-text-shadow: 1px 1px 0 #444444;
+    text-shadow:
+        1px 1px 0 #444444,
+        -1px -1px 0 #444444,
+        1px -1px 0 #444444,
+        -1px 1px 0 #444444,
+        1px 1px 0 #444444;
+    color: #181818;
+}
+.title_color-blue {
+    color: var(--secondary-01);
+}
+.title_color-purple {
+    color: var(--primary-02);
+}
+.title_color-yellow {
+    color: var(--secondary-02);
+}
+.subtitle-s1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: auto;
+}
+.subtitle-s2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.subtitle-s3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.subtitle-s4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: auto;
+}
+.subtitle-s5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: auto;
+}
+.subtitle-s6 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.subtitle-s7 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%;
+}
+.body {
+    color: var(--grayscale-03);
+}
+.body-b1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: auto;
+}
+.body-b2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: auto;
+}
+.body-b3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.body-b4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.body-b5 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+}
+.body-b6 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 140%;
+    color: var(--grayscale-03);
+}
+.body-b7 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.btn__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25.2px;
+    color: var(--grayscale-07);
+}
+
+p + p {
+    margin-top: 10px;
+}

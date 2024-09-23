@@ -1,0 +1,33 @@
+.header{
+    width: 100%;
+    height: 71px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: var(--grayscale-01);
+}
+.header__wrap{
+    width: 100%;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-mobile{
+    position: fixed;
+}
+
+.header__customer{
+    display: none;
+    align-items: center;
+    border: 1px solid var(--primary-01);
+    border-radius: 16px;
+    gap: 14px;
+    padding: 16px 30px;
+}
+.header__customer-separator{
+    width: 1px;
+    height: 25px;
+    background: var(--grayscale-02);
+}

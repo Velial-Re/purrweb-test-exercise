@@ -1,0 +1,22 @@
+.logos{
+    background: var(--grayscale-06);
+    padding-bottom: 100px;
+}
+.logos .wrapper{
+    padding-inline: 0;
+}
+.logos__row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding-inline: 51px;
+}
+
+.logos__item{
+    object-fit: contain;
+}
+.logos__title{
+    display: none;
+}
