@@ -8,7 +8,6 @@ window.onload = function () {
     let container = document.querySelector(".slider__slides");
     let containerStyles = getComputedStyle(container);
     let containerWidth = parseInt(containerStyles.width);
-    let speed = 5;
     let paginationSpeed = 10;
     async function sleep(seconds) {
       return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
@@ -45,7 +44,7 @@ window.onload = function () {
           slides[currentSlide].classList.add("slider__slides-item-noActive");
           slides[currentSlide].style = "";
           slides[nextSlideNumber].style = "";
-          currentSlide++, nextSlideNumber++;
+          currentSlide++;
     
           if (currentSlide === length) {
             currentSlide = 0;
@@ -181,7 +180,7 @@ window.onload = function () {
           slides[currentSlide].classList.add("slider__slides-item-noActive");
           slides[currentSlide].style = "";
           slides[prevSlideNumber].style = "";
-          currentSlide--, prevSlideNumber--;
+          currentSlide--;
           if (currentSlide < 0) {
             currentSlide = length - 1;
           }
