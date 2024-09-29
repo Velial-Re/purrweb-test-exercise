@@ -4,7 +4,6 @@ window.onload = function () {
     const slides = document.querySelectorAll(".slider__slides-item");
     var currentSlide = 0;
     var length = slides.length;
-    var paginationWorking = false;
     let container = document.querySelector(".slider__slides");
     let containerStyles = getComputedStyle(container);
     let containerWidth = parseInt(containerStyles.width);
@@ -26,6 +25,7 @@ window.onload = function () {
     buttonNext.addEventListener("click", () => nextSlide(containerWidth));
     async function nextSlide(width, speed = 5, isPagination = false) {
       disableButtons();
+      disableDots();
       let nextSlideNumber = currentSlide + 1;
       if (nextSlideNumber === length) {
         nextSlideNumber = 0;
@@ -56,10 +56,10 @@ window.onload = function () {
           slides[currentSlide].style.left = previousSlidePos + "px";
         }
       }
-      await sleep((containerWidth / speed / 100) * 0.5);
-      if (!isPagination) {
+      await sleep(containerWidth / speed / 100);
+    
         enableButtons();
-      }
+        enableDots();
     }
     
     
@@ -162,6 +162,7 @@ window.onload = function () {
     buttonPrev.addEventListener("click", () => prevSlide(containerWidth));
     async function prevSlide(width, speed = 5, isPagination = false) {
       disableButtons();
+      disableDots();
       var prevSlideNumber = currentSlide - 1;
       if (prevSlideNumber < 0) {
         prevSlideNumber = length - 1;
@@ -191,10 +192,10 @@ window.onload = function () {
           slides[currentSlide].style.right = previousSlidePos + "px";
         }
       }
-      await sleep((containerWidth / speed / 100) * 0.5);
-      if (!isPagination) {
+      await sleep(containerWidth / speed / 100);
+    
         enableButtons();
-      }
+        enableDots();
     }
     paginate();  
 }
