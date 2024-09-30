@@ -178,9 +178,14 @@
     }
     .popup {
         background-color: rgba(0, 0, 0, 0.2);
+        top: 0;
+        left: 0;
         z-index: 998!important;
         width: 100vw;
         height: 100vh;
+    }
+     .popup:has("display: block;") .body{
+        overflow: hidden;
     }
     .popup__wrap {
         flex-direction: column;
